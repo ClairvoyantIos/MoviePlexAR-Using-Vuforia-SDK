@@ -1,0 +1,492 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1DDED246156FC03800CA3663 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DDED245156FC03800CA3663 /* UIKit.framework */; };
+		1DDED248156FC03800CA3663 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DDED247156FC03800CA3663 /* Foundation.framework */; };
+		1DDED24A156FC03800CA3663 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DDED249156FC03800CA3663 /* CoreGraphics.framework */; };
+		1DDED250156FC03800CA3663 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1DDED24E156FC03800CA3663 /* InfoPlist.strings */; };
+		1DDED252156FC03800CA3663 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDED251156FC03800CA3663 /* main.m */; };
+		1DDED256156FC03800CA3663 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1DDED255156FC03800CA3663 /* AppDelegate.mm */; };
+		1DDED274156FC04F00CA3663 /* EAGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1DDED263156FC04F00CA3663 /* EAGLView.mm */; };
+		1DDED275156FC04F00CA3663 /* AR_EAGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1DDED265156FC04F00CA3663 /* AR_EAGLView.mm */; };
+		1DDED276156FC04F00CA3663 /* ARParentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDED267156FC04F00CA3663 /* ARParentViewController.m */; };
+		1DDED277156FC04F00CA3663 /* ARViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1DDED269156FC04F00CA3663 /* ARViewController.mm */; };
+		1DDED278156FC04F00CA3663 /* OverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDED26B156FC04F00CA3663 /* OverlayView.m */; };
+		1DDED279156FC04F00CA3663 /* OverlayViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1DDED26D156FC04F00CA3663 /* OverlayViewController.mm */; };
+		1DDED27A156FC04F00CA3663 /* QCARutils.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1DDED26F156FC04F00CA3663 /* QCARutils.mm */; };
+		1DDED27B156FC04F00CA3663 /* ShaderUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DDED270156FC04F00CA3663 /* ShaderUtils.cpp */; };
+		1DDED27C156FC04F00CA3663 /* Texture.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1DDED273156FC04F00CA3663 /* Texture.mm */; };
+		1DDED282156FC08600CA3663 /* Shader.fsh in Sources */ = {isa = PBXBuildFile; fileRef = 1DDED280156FC08600CA3663 /* Shader.fsh */; };
+		1DDED283156FC08600CA3663 /* Shader.vsh in Sources */ = {isa = PBXBuildFile; fileRef = 1DDED281156FC08600CA3663 /* Shader.vsh */; };
+		1DDED2AA156FC0B800CA3663 /* Movieplex.dat in Resources */ = {isa = PBXBuildFile; fileRef = 1DDED2A2156FC0B800CA3663 /* Movieplex.dat */; };
+		1DDED2AB156FC0B800CA3663 /* Movieplex.xml in Resources */ = {isa = PBXBuildFile; fileRef = 1DDED2A3156FC0B800CA3663 /* Movieplex.xml */; };
+		1DDED2AC156FC0B800CA3663 /* Tarmac.dat in Resources */ = {isa = PBXBuildFile; fileRef = 1DDED2A4156FC0B800CA3663 /* Tarmac.dat */; };
+		1DDED2AD156FC0B800CA3663 /* Tarmac.xml in Resources */ = {isa = PBXBuildFile; fileRef = 1DDED2A5156FC0B800CA3663 /* Tarmac.xml */; };
+		1DDED2AE156FC0B800CA3663 /* TextureTeapotBlue.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DDED2A7156FC0B800CA3663 /* TextureTeapotBlue.png */; };
+		1DDED2AF156FC0B800CA3663 /* TextureTeapotBrass.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DDED2A8156FC0B800CA3663 /* TextureTeapotBrass.png */; };
+		1DDED2B0156FC0B800CA3663 /* TextureTeapotRed.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DDED2A9156FC0B800CA3663 /* TextureTeapotRed.png */; };
+		1DDED2B2156FC0C000CA3663 /* arm in Resources */ = {isa = PBXBuildFile; fileRef = 1DDED2B1156FC0C000CA3663 /* arm */; };
+		1DDED2BA156FC1BB00CA3663 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DDED2B3156FC1BB00CA3663 /* AVFoundation.framework */; };
+		1DDED2BB156FC1BC00CA3663 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DDED2B4156FC1BB00CA3663 /* CoreMedia.framework */; };
+		1DDED2BC156FC1BC00CA3663 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DDED2B5156FC1BB00CA3663 /* MediaPlayer.framework */; };
+		1DDED2BD156FC1BC00CA3663 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DDED2B6156FC1BB00CA3663 /* OpenGLES.framework */; };
+		1DDED2BE156FC1BC00CA3663 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DDED2B7156FC1BB00CA3663 /* QuartzCore.framework */; };
+		1DDED2BF156FC1BC00CA3663 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DDED2B8156FC1BB00CA3663 /* Security.framework */; };
+		1DDED2C0156FC1BC00CA3663 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DDED2B9156FC1BB00CA3663 /* SystemConfiguration.framework */; };
+		1DDED2C2156FC1EF00CA3663 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DDED2C1156FC1EF00CA3663 /* CoreVideo.framework */; };
+		1DDED2C6156FC28300CA3663 /* libQCAR.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DDED2C5156FC28300CA3663 /* libQCAR.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1DDED241156FC03800CA3663 /* Movieplex-AR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Movieplex-AR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DDED245156FC03800CA3663 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1DDED247156FC03800CA3663 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1DDED249156FC03800CA3663 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1DDED24D156FC03800CA3663 /* Movieplex-AR-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Movieplex-AR-Info.plist"; sourceTree = "<group>"; };
+		1DDED24F156FC03800CA3663 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1DDED251156FC03800CA3663 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1DDED253156FC03800CA3663 /* Movieplex-AR-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Movieplex-AR-Prefix.pch"; sourceTree = "<group>"; };
+		1DDED254156FC03800CA3663 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1DDED255156FC03800CA3663 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		1DDED262156FC04F00CA3663 /* EAGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EAGLView.h; path = ../EAGLView.h; sourceTree = "<group>"; };
+		1DDED263156FC04F00CA3663 /* EAGLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = EAGLView.mm; path = ../EAGLView.mm; sourceTree = "<group>"; };
+		1DDED264156FC04F00CA3663 /* AR_EAGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AR_EAGLView.h; path = ../AR_EAGLView.h; sourceTree = "<group>"; };
+		1DDED265156FC04F00CA3663 /* AR_EAGLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AR_EAGLView.mm; path = ../AR_EAGLView.mm; sourceTree = "<group>"; };
+		1DDED266156FC04F00CA3663 /* ARParentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ARParentViewController.h; path = ../ARParentViewController.h; sourceTree = "<group>"; };
+		1DDED267156FC04F00CA3663 /* ARParentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ARParentViewController.m; path = ../ARParentViewController.m; sourceTree = "<group>"; };
+		1DDED268156FC04F00CA3663 /* ARViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ARViewController.h; path = ../ARViewController.h; sourceTree = "<group>"; };
+		1DDED269156FC04F00CA3663 /* ARViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ARViewController.mm; path = ../ARViewController.mm; sourceTree = "<group>"; };
+		1DDED26A156FC04F00CA3663 /* OverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OverlayView.h; path = ../OverlayView.h; sourceTree = "<group>"; };
+		1DDED26B156FC04F00CA3663 /* OverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OverlayView.m; path = ../OverlayView.m; sourceTree = "<group>"; };
+		1DDED26C156FC04F00CA3663 /* OverlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OverlayViewController.h; path = ../OverlayViewController.h; sourceTree = "<group>"; };
+		1DDED26D156FC04F00CA3663 /* OverlayViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = OverlayViewController.mm; path = ../OverlayViewController.mm; sourceTree = "<group>"; };
+		1DDED26E156FC04F00CA3663 /* QCARutils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QCARutils.h; path = ../QCARutils.h; sourceTree = "<group>"; };
+		1DDED26F156FC04F00CA3663 /* QCARutils.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = QCARutils.mm; path = ../QCARutils.mm; sourceTree = "<group>"; };
+		1DDED270156FC04F00CA3663 /* ShaderUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ShaderUtils.cpp; path = ../ShaderUtils.cpp; sourceTree = "<group>"; };
+		1DDED271156FC04F00CA3663 /* ShaderUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShaderUtils.h; path = ../ShaderUtils.h; sourceTree = "<group>"; };
+		1DDED272156FC04F00CA3663 /* Texture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Texture.h; path = ../Texture.h; sourceTree = "<group>"; };
+		1DDED273156FC04F00CA3663 /* Texture.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = Texture.mm; path = ../Texture.mm; sourceTree = "<group>"; };
+		1DDED280156FC08600CA3663 /* Shader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = Shader.fsh; path = ../Shader.fsh; sourceTree = "<group>"; };
+		1DDED281156FC08600CA3663 /* Shader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = Shader.vsh; path = ../Shader.vsh; sourceTree = "<group>"; };
+		1DDED284156FC09700CA3663 /* Area.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Area.h; path = ../Area.h; sourceTree = "<group>"; };
+		1DDED285156FC09700CA3663 /* CameraCalibration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CameraCalibration.h; path = ../CameraCalibration.h; sourceTree = "<group>"; };
+		1DDED286156FC09700CA3663 /* CameraDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CameraDevice.h; path = ../CameraDevice.h; sourceTree = "<group>"; };
+		1DDED287156FC09700CA3663 /* DataSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataSet.h; path = ../DataSet.h; sourceTree = "<group>"; };
+		1DDED288156FC09700CA3663 /* Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Frame.h; path = ../Frame.h; sourceTree = "<group>"; };
+		1DDED289156FC09700CA3663 /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Image.h; path = ../Image.h; sourceTree = "<group>"; };
+		1DDED28A156FC09700CA3663 /* ImageTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageTarget.h; path = ../ImageTarget.h; sourceTree = "<group>"; };
+		1DDED28B156FC09700CA3663 /* ImageTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageTracker.h; path = ../ImageTracker.h; sourceTree = "<group>"; };
+		1DDED28C156FC09700CA3663 /* Marker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Marker.h; path = ../Marker.h; sourceTree = "<group>"; };
+		1DDED28D156FC09700CA3663 /* MarkerTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MarkerTracker.h; path = ../MarkerTracker.h; sourceTree = "<group>"; };
+		1DDED28E156FC09700CA3663 /* Matrices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Matrices.h; path = ../Matrices.h; sourceTree = "<group>"; };
+		1DDED28F156FC09700CA3663 /* MultiTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MultiTarget.h; path = ../MultiTarget.h; sourceTree = "<group>"; };
+		1DDED290156FC09700CA3663 /* NonCopyable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NonCopyable.h; path = ../NonCopyable.h; sourceTree = "<group>"; };
+		1DDED291156FC09700CA3663 /* QCAR_iOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QCAR_iOS.h; path = ../QCAR_iOS.h; sourceTree = "<group>"; };
+		1DDED292156FC09700CA3663 /* QCAR.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QCAR.h; path = ../QCAR.h; sourceTree = "<group>"; };
+		1DDED293156FC09700CA3663 /* Rectangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Rectangle.h; path = ../Rectangle.h; sourceTree = "<group>"; };
+		1DDED294156FC09700CA3663 /* Renderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Renderer.h; path = ../Renderer.h; sourceTree = "<group>"; };
+		1DDED295156FC09700CA3663 /* State.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = State.h; path = ../State.h; sourceTree = "<group>"; };
+		1DDED296156FC09700CA3663 /* System.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = System.h; path = ../System.h; sourceTree = "<group>"; };
+		1DDED297156FC09700CA3663 /* Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tool.h; path = ../Tool.h; sourceTree = "<group>"; };
+		1DDED298156FC09700CA3663 /* Trackable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Trackable.h; path = ../Trackable.h; sourceTree = "<group>"; };
+		1DDED299156FC09700CA3663 /* Tracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tracker.h; path = ../Tracker.h; sourceTree = "<group>"; };
+		1DDED29A156FC09700CA3663 /* TrackerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TrackerManager.h; path = ../TrackerManager.h; sourceTree = "<group>"; };
+		1DDED29B156FC09700CA3663 /* UIGLViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIGLViewProtocol.h; path = ../UIGLViewProtocol.h; sourceTree = "<group>"; };
+		1DDED29C156FC09700CA3663 /* UpdateCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UpdateCallback.h; path = ../UpdateCallback.h; sourceTree = "<group>"; };
+		1DDED29D156FC09700CA3663 /* Vectors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Vectors.h; path = ../Vectors.h; sourceTree = "<group>"; };
+		1DDED29E156FC09700CA3663 /* VideoBackgroundConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VideoBackgroundConfig.h; path = ../VideoBackgroundConfig.h; sourceTree = "<group>"; };
+		1DDED29F156FC09700CA3663 /* VideoBackgroundTextureInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VideoBackgroundTextureInfo.h; path = ../VideoBackgroundTextureInfo.h; sourceTree = "<group>"; };
+		1DDED2A0156FC09700CA3663 /* VideoMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VideoMode.h; path = ../VideoMode.h; sourceTree = "<group>"; };
+		1DDED2A1156FC09700CA3663 /* VirtualButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VirtualButton.h; path = ../VirtualButton.h; sourceTree = "<group>"; };
+		1DDED2A2156FC0B800CA3663 /* Movieplex.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = Movieplex.dat; sourceTree = "<group>"; };
+		1DDED2A3156FC0B800CA3663 /* Movieplex.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Movieplex.xml; sourceTree = "<group>"; };
+		1DDED2A4156FC0B800CA3663 /* Tarmac.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = Tarmac.dat; sourceTree = "<group>"; };
+		1DDED2A5156FC0B800CA3663 /* Tarmac.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Tarmac.xml; sourceTree = "<group>"; };
+		1DDED2A6156FC0B800CA3663 /* Teapot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Teapot.h; sourceTree = "<group>"; };
+		1DDED2A7156FC0B800CA3663 /* TextureTeapotBlue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TextureTeapotBlue.png; sourceTree = "<group>"; };
+		1DDED2A8156FC0B800CA3663 /* TextureTeapotBrass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TextureTeapotBrass.png; sourceTree = "<group>"; };
+		1DDED2A9156FC0B800CA3663 /* TextureTeapotRed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TextureTeapotRed.png; sourceTree = "<group>"; };
+		1DDED2B1156FC0C000CA3663 /* arm */ = {isa = PBXFileReference; lastKnownFileType = folder; name = arm; path = ../arm; sourceTree = "<group>"; };
+		1DDED2B3156FC1BB00CA3663 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		1DDED2B4156FC1BB00CA3663 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		1DDED2B5156FC1BB00CA3663 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		1DDED2B6156FC1BB00CA3663 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		1DDED2B7156FC1BB00CA3663 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		1DDED2B8156FC1BB00CA3663 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		1DDED2B9156FC1BB00CA3663 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		1DDED2C1156FC1EF00CA3663 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		1DDED2C5156FC28300CA3663 /* libQCAR.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libQCAR.a; path = "../../../Development/iOS/vuforia-sdk-ios-1-5-8/build/lib/arm/libQCAR.a"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1DDED23E156FC03800CA3663 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DDED2C6156FC28300CA3663 /* libQCAR.a in Frameworks */,
+				1DDED2C2156FC1EF00CA3663 /* CoreVideo.framework in Frameworks */,
+				1DDED2BA156FC1BB00CA3663 /* AVFoundation.framework in Frameworks */,
+				1DDED2BB156FC1BC00CA3663 /* CoreMedia.framework in Frameworks */,
+				1DDED2BC156FC1BC00CA3663 /* MediaPlayer.framework in Frameworks */,
+				1DDED2BD156FC1BC00CA3663 /* OpenGLES.framework in Frameworks */,
+				1DDED2BE156FC1BC00CA3663 /* QuartzCore.framework in Frameworks */,
+				1DDED2BF156FC1BC00CA3663 /* Security.framework in Frameworks */,
+				1DDED2C0156FC1BC00CA3663 /* SystemConfiguration.framework in Frameworks */,
+				1DDED246156FC03800CA3663 /* UIKit.framework in Frameworks */,
+				1DDED248156FC03800CA3663 /* Foundation.framework in Frameworks */,
+				1DDED24A156FC03800CA3663 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1DDED236156FC03800CA3663 = {
+			isa = PBXGroup;
+			children = (
+				1DDED24B156FC03800CA3663 /* Movieplex-AR */,
+				1DDED244156FC03800CA3663 /* Frameworks */,
+				1DDED242156FC03800CA3663 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1DDED242156FC03800CA3663 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1DDED241156FC03800CA3663 /* Movieplex-AR.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1DDED244156FC03800CA3663 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DDED2C5156FC28300CA3663 /* libQCAR.a */,
+				1DDED2C1156FC1EF00CA3663 /* CoreVideo.framework */,
+				1DDED2B3156FC1BB00CA3663 /* AVFoundation.framework */,
+				1DDED2B4156FC1BB00CA3663 /* CoreMedia.framework */,
+				1DDED2B5156FC1BB00CA3663 /* MediaPlayer.framework */,
+				1DDED2B6156FC1BB00CA3663 /* OpenGLES.framework */,
+				1DDED2B7156FC1BB00CA3663 /* QuartzCore.framework */,
+				1DDED2B8156FC1BB00CA3663 /* Security.framework */,
+				1DDED2B9156FC1BB00CA3663 /* SystemConfiguration.framework */,
+				1DDED245156FC03800CA3663 /* UIKit.framework */,
+				1DDED247156FC03800CA3663 /* Foundation.framework */,
+				1DDED249156FC03800CA3663 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1DDED24B156FC03800CA3663 /* Movieplex-AR */ = {
+			isa = PBXGroup;
+			children = (
+				1DDED27D156FC05500CA3663 /* ARCommon */,
+				1DDED254156FC03800CA3663 /* AppDelegate.h */,
+				1DDED255156FC03800CA3663 /* AppDelegate.mm */,
+				1DDED24C156FC03800CA3663 /* Supporting Files */,
+			);
+			path = "Movieplex-AR";
+			sourceTree = "<group>";
+		};
+		1DDED24C156FC03800CA3663 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1DDED2B1156FC0C000CA3663 /* arm */,
+				1DDED27F156FC07100CA3663 /* Assets */,
+				1DDED27E156FC06700CA3663 /* QCAR */,
+				1DDED24D156FC03800CA3663 /* Movieplex-AR-Info.plist */,
+				1DDED24E156FC03800CA3663 /* InfoPlist.strings */,
+				1DDED251156FC03800CA3663 /* main.m */,
+				1DDED253156FC03800CA3663 /* Movieplex-AR-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1DDED27D156FC05500CA3663 /* ARCommon */ = {
+			isa = PBXGroup;
+			children = (
+				1DDED280156FC08600CA3663 /* Shader.fsh */,
+				1DDED281156FC08600CA3663 /* Shader.vsh */,
+				1DDED262156FC04F00CA3663 /* EAGLView.h */,
+				1DDED263156FC04F00CA3663 /* EAGLView.mm */,
+				1DDED264156FC04F00CA3663 /* AR_EAGLView.h */,
+				1DDED265156FC04F00CA3663 /* AR_EAGLView.mm */,
+				1DDED266156FC04F00CA3663 /* ARParentViewController.h */,
+				1DDED267156FC04F00CA3663 /* ARParentViewController.m */,
+				1DDED268156FC04F00CA3663 /* ARViewController.h */,
+				1DDED269156FC04F00CA3663 /* ARViewController.mm */,
+				1DDED26A156FC04F00CA3663 /* OverlayView.h */,
+				1DDED26B156FC04F00CA3663 /* OverlayView.m */,
+				1DDED26C156FC04F00CA3663 /* OverlayViewController.h */,
+				1DDED26D156FC04F00CA3663 /* OverlayViewController.mm */,
+				1DDED26E156FC04F00CA3663 /* QCARutils.h */,
+				1DDED26F156FC04F00CA3663 /* QCARutils.mm */,
+				1DDED270156FC04F00CA3663 /* ShaderUtils.cpp */,
+				1DDED271156FC04F00CA3663 /* ShaderUtils.h */,
+				1DDED272156FC04F00CA3663 /* Texture.h */,
+				1DDED273156FC04F00CA3663 /* Texture.mm */,
+			);
+			name = ARCommon;
+			sourceTree = "<group>";
+		};
+		1DDED27E156FC06700CA3663 /* QCAR */ = {
+			isa = PBXGroup;
+			children = (
+				1DDED284156FC09700CA3663 /* Area.h */,
+				1DDED285156FC09700CA3663 /* CameraCalibration.h */,
+				1DDED286156FC09700CA3663 /* CameraDevice.h */,
+				1DDED287156FC09700CA3663 /* DataSet.h */,
+				1DDED288156FC09700CA3663 /* Frame.h */,
+				1DDED289156FC09700CA3663 /* Image.h */,
+				1DDED28A156FC09700CA3663 /* ImageTarget.h */,
+				1DDED28B156FC09700CA3663 /* ImageTracker.h */,
+				1DDED28C156FC09700CA3663 /* Marker.h */,
+				1DDED28D156FC09700CA3663 /* MarkerTracker.h */,
+				1DDED28E156FC09700CA3663 /* Matrices.h */,
+				1DDED28F156FC09700CA3663 /* MultiTarget.h */,
+				1DDED290156FC09700CA3663 /* NonCopyable.h */,
+				1DDED291156FC09700CA3663 /* QCAR_iOS.h */,
+				1DDED292156FC09700CA3663 /* QCAR.h */,
+				1DDED293156FC09700CA3663 /* Rectangle.h */,
+				1DDED294156FC09700CA3663 /* Renderer.h */,
+				1DDED295156FC09700CA3663 /* State.h */,
+				1DDED296156FC09700CA3663 /* System.h */,
+				1DDED297156FC09700CA3663 /* Tool.h */,
+				1DDED298156FC09700CA3663 /* Trackable.h */,
+				1DDED299156FC09700CA3663 /* Tracker.h */,
+				1DDED29A156FC09700CA3663 /* TrackerManager.h */,
+				1DDED29B156FC09700CA3663 /* UIGLViewProtocol.h */,
+				1DDED29C156FC09700CA3663 /* UpdateCallback.h */,
+				1DDED29D156FC09700CA3663 /* Vectors.h */,
+				1DDED29E156FC09700CA3663 /* VideoBackgroundConfig.h */,
+				1DDED29F156FC09700CA3663 /* VideoBackgroundTextureInfo.h */,
+				1DDED2A0156FC09700CA3663 /* VideoMode.h */,
+				1DDED2A1156FC09700CA3663 /* VirtualButton.h */,
+			);
+			name = QCAR;
+			sourceTree = "<group>";
+		};
+		1DDED27F156FC07100CA3663 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				1DDED2A2156FC0B800CA3663 /* Movieplex.dat */,
+				1DDED2A3156FC0B800CA3663 /* Movieplex.xml */,
+				1DDED2A4156FC0B800CA3663 /* Tarmac.dat */,
+				1DDED2A5156FC0B800CA3663 /* Tarmac.xml */,
+				1DDED2A6156FC0B800CA3663 /* Teapot.h */,
+				1DDED2A7156FC0B800CA3663 /* TextureTeapotBlue.png */,
+				1DDED2A8156FC0B800CA3663 /* TextureTeapotBrass.png */,
+				1DDED2A9156FC0B800CA3663 /* TextureTeapotRed.png */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1DDED240156FC03800CA3663 /* Movieplex-AR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DDED25F156FC03800CA3663 /* Build configuration list for PBXNativeTarget "Movieplex-AR" */;
+			buildPhases = (
+				1DDED23D156FC03800CA3663 /* Sources */,
+				1DDED23E156FC03800CA3663 /* Frameworks */,
+				1DDED23F156FC03800CA3663 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Movieplex-AR";
+			productName = "Movieplex-AR";
+			productReference = 1DDED241156FC03800CA3663 /* Movieplex-AR.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1DDED238156FC03800CA3663 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 1DDED23B156FC03800CA3663 /* Build configuration list for PBXProject "Movieplex-AR" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1DDED236156FC03800CA3663;
+			productRefGroup = 1DDED242156FC03800CA3663 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1DDED240156FC03800CA3663 /* Movieplex-AR */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1DDED23F156FC03800CA3663 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DDED250156FC03800CA3663 /* InfoPlist.strings in Resources */,
+				1DDED2AA156FC0B800CA3663 /* Movieplex.dat in Resources */,
+				1DDED2AB156FC0B800CA3663 /* Movieplex.xml in Resources */,
+				1DDED2AC156FC0B800CA3663 /* Tarmac.dat in Resources */,
+				1DDED2AD156FC0B800CA3663 /* Tarmac.xml in Resources */,
+				1DDED2AE156FC0B800CA3663 /* TextureTeapotBlue.png in Resources */,
+				1DDED2AF156FC0B800CA3663 /* TextureTeapotBrass.png in Resources */,
+				1DDED2B0156FC0B800CA3663 /* TextureTeapotRed.png in Resources */,
+				1DDED2B2156FC0C000CA3663 /* arm in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1DDED23D156FC03800CA3663 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DDED252156FC03800CA3663 /* main.m in Sources */,
+				1DDED256156FC03800CA3663 /* AppDelegate.mm in Sources */,
+				1DDED274156FC04F00CA3663 /* EAGLView.mm in Sources */,
+				1DDED275156FC04F00CA3663 /* AR_EAGLView.mm in Sources */,
+				1DDED276156FC04F00CA3663 /* ARParentViewController.m in Sources */,
+				1DDED277156FC04F00CA3663 /* ARViewController.mm in Sources */,
+				1DDED278156FC04F00CA3663 /* OverlayView.m in Sources */,
+				1DDED279156FC04F00CA3663 /* OverlayViewController.mm in Sources */,
+				1DDED27A156FC04F00CA3663 /* QCARutils.mm in Sources */,
+				1DDED27B156FC04F00CA3663 /* ShaderUtils.cpp in Sources */,
+				1DDED27C156FC04F00CA3663 /* Texture.mm in Sources */,
+				1DDED282156FC08600CA3663 /* Shader.fsh in Sources */,
+				1DDED283156FC08600CA3663 /* Shader.vsh in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1DDED24E156FC03800CA3663 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DDED24F156FC03800CA3663 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1DDED25D156FC03800CA3663 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1DDED25E156FC03800CA3663 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1DDED260156FC03800CA3663 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Movieplex-AR/Movieplex-AR-Prefix.pch";
+				INFOPLIST_FILE = "Movieplex-AR/Movieplex-AR-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/arm\"",
+					"\"$(SRCROOT)/../../../Development/iOS/vuforia-sdk-ios-1-5-8/build/lib/arm\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1DDED261156FC03800CA3663 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Movieplex-AR/Movieplex-AR-Prefix.pch";
+				INFOPLIST_FILE = "Movieplex-AR/Movieplex-AR-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/arm\"",
+					"\"$(SRCROOT)/../../../Development/iOS/vuforia-sdk-ios-1-5-8/build/lib/arm\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DDED23B156FC03800CA3663 /* Build configuration list for PBXProject "Movieplex-AR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DDED25D156FC03800CA3663 /* Debug */,
+				1DDED25E156FC03800CA3663 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DDED25F156FC03800CA3663 /* Build configuration list for PBXNativeTarget "Movieplex-AR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DDED260156FC03800CA3663 /* Debug */,
+				1DDED261156FC03800CA3663 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1DDED238156FC03800CA3663 /* Project object */;
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<QCARConfig xsi:noNamespaceSchemaLocation="qcar_config.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Tracking>
+        <ImageTarget name="Journey4star" size="1280 1024"/>
+        <ImageTarget name="Tangle3star" size="2400 1350"/>
+        <ImageTarget name="realsteel" size="1280 1024"/>
+        <ImageTarget name="Transform" size="1280 1024"/>
+    </Tracking>
+</QCARConfig>
